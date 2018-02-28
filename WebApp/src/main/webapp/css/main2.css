@@ -1,0 +1,88 @@
+nav{
+	position: fixed; /* Фиксированное положение */
+	text-align:center;
+}
+
+nav ul {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 0px; /* Значение полей */
+}
+
+nav ul li {
+    display: inline; /* Отображать как строчный элемент */
+	background-color: green;
+}
+
+nav ul li :hover{
+	background-color: yellow; 
+}
+
+nav ul li a {
+	  display: inline-block;
+	  color:white; 
+	  text-decoration: none;
+	  width:197px;
+}
+
+nav ul li a:hover {
+	  color:red; 
+}
+
+header{
+	background-color: #FF00ff;
+	height: 100px;
+	padding-top:20px;
+}
+
+aside{
+	background-color: darkgrey;
+    margin: 0px 10px auto;
+    width: 200px;
+	height: auto;
+    float: left;
+}
+
+TD {
+    vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+    width: 100%;
+	height: auto;
+    float: left;
+    background-color: darkgrey;
+    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+   }
+   #col1 {
+    width: 50%; /* Ширина первой колонки */
+    
+   }
+   #col2 {
+    width: 50%; /* Ширина второй колонки */
+    
+   }
+ 
+   
+
+section#dside{
+	margin: 20px 10px auto;
+    width: 80%;
+	height: auto;
+    float: left;
+}
+
+
+#content{
+	background-color: #6495ED;
+	margin-left: 200px;
+	margin-top: -16px;
+    display: block;
+	width: 800px;
+	min-height:1200px;
+	top:200px;
+}
+
+footer{
+	background-color: #FFFF00;
+	position: absolute;  
+	bottom: 0;  
+	height: 80px; 
+	width:1000px;
+}

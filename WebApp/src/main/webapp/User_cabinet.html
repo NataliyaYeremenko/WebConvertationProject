@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+		<aside>
+		<div id="login">
+		
+			<form name="f1" method="get" action="">
+			<p> <label for="login">Логин:</label> </p>
+			<br>
+				<p align = "center">                   
+                    <input id="login" type="text" name="login" placeholder="Логин" required>
+                </p>
+            <br>
+                <p> <label for="password">Пароль:</label> </p>
+            <br>
+                <p align = "center">       
+                    <input id="old_password" type="password" name='old_password' placeholder="Старый пароль" required>
+                </p>
+                <br>
+                <p align = "center">   
+                    <input id="new_password" type="password" name='new_password' placeholder="Новый пароль" required>
+                </p>
+                <br>
+                <p align = "center">   
+                    <input id="repeat_password" type="password" name='repeat_password' placeholder="Повторить пароль" required>
+                </p>
+                <br>
+                <p><label for="emailReg">Email:</label></p>
+                <br>
+                <p align = "center">   
+                    <input id="emailReg" type="text" name="email" placeholder="email" required>
+                </p>
+                <br>
+                <br>
+				<p align = "center">   
+                <input type="button" class="btn-submit" onclick="main.updateUser()" name="singin_button" value="Save">
+                </p>
+                <br>
+                <br>
+            </form>
+		</div>	
+		<div>
+		    <form>
+		        <p align = "center">
+                    <textarea id="comment" type="comment" rows = 15px placeholder="Comment" required></textarea>
+		        </p>
+		        <br>
+				<p align = "center">   
+                <input type="button" class="btn-submit" onclick="main.addComment()" name="singin_button" value="Add comment">
+                </p>
+		    </form>
+		</div>
+		</aside>
+		
+		<div class="accordian">
+			<ul>
+				<li>
+					<div class="image_title">
+						<a href="#">1.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/1.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">2.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/2.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">3.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/3.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">4.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/4.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">5.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/5.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">6.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/6.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">7.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/7.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">8.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/8.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	
+   <section id="dside">
+   <table width="100%" cellpadding="5" cellspacing="5">
+   <tr>
+        <td id="col1">
+           <br>
+           <form align = "left">
+		        <p> <input id="inputpath" type="inputpath" name='inputpath' size = 35px placeholder="InputPath" required >   или   <input type="file"></p><br>
+		        <p> <input id="imageName" type="text" name='imageName' size = 75px placeholder="ImageName" required></p><br>
+		        <p> <input id="formatFile" type="text" name='formatFile' size = 75px placeholder="FormatFile" required></p><br>
+		        <p align = "center"><input type="button" class="btn-submit" onclick="main.addInputFile()" name="singin_button" value="Add inputFile"></p>
+	        </form>
+           <br>
+        </td>
+        <td id="col2">
+            <form align = "center">
+		        <p> <input id="newimageName" type="newimageName" name='newimageName' size = 35px placeholder="NewImageName" required></p><br>
+		        <p> <input id="outputpath" type="inputpath" name='outputpath' size = 35px placeholder="OutputPath" required></p><br>
+		        <p> <input id="quality" type="quality" name='quality' size = 35px placeholder="Quality" required></p><br>
+		        <p>
+		            <select>
+		                <option value="convert">DCT</option>
+		                <option value="tograyscale">ToGrayScale</option>
+		            </select>
+		        </p>
+		        <br>
+		        <input type="button" class="btn-submit" onclick="main.addOutputFile()" name="singin_button" value="Change Image">
+	        </form></td>
+    </tr>
+  </table>
+  </section>
+		<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+		<!-- CORE JQUERY  SCRIPTS -->
+		<script src="assets/js/jquery-1.11.1.js"></script>
+		<!-- BOOTSTRAP SCRIPTS  -->
+		<script src="assets/js/bootstrap.js"></script>
+		<!-- SCROLLING SCRIPTS PLUGIN  -->
+		<script src="assets/js/jquery.easing.min.js"></script>
+		<!-- CUSTOM SCRIPTS   -->
+		<script src="assets/js/custom.js"></script>
+		<script src="js/AddImage.js"></script>
+		<script src="js/comment.js"></script>
+		<script src="js/changeInfo.js"></script>
+  </body>
+</html>

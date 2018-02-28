@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Конвертация изображений</title>
+	<!-- Сбрасываем стандартные стили браузера -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- Подключаем свой файл со стилями -->
+	<!--Подключаем шрифты с сайта fonts.google.com -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<section id="main">
+    <div class="main-header">
+        <h1>Конвертация изображений</h1>
+        <span class="main-line"></span>
+        <p>Сейчас Вы сможете изменить абсолютно все ;)
+            <br>Приступим... </p>
+    </div>
+
+    <form id="loginbox" class="form-4">
+        <p>
+            <label for="login">Логин</label>
+            <input id="login" type="text" name="login" onclick="" placeholder="Логин" required>
+        </p>
+        <p>
+            <label for="password">Пароль</label>
+            <input id="password" type="password" name='password' placeholder="Пароль" required>
+        </p>
+
+        <p>
+            <input type="button" class="btn-submit" name="login_button" onclick="main.log_in()" value="Вход" >
+        </p>
+        <br>
+        <br>
+        Don't have an account!
+        <br>
+        <br>
+        <a href="#downpage">
+            Sign Up Here
+        </a>
+    </form>
+</section>
+
+    <section id="loginSection">
+        <form class=" form-4" id="signupbox" style="top:150%;">
+            <a name="downpage"><h4>Создай аккаунт</h4></a>
+            <br>
+            <br>
+            <p>
+                <label for="logReg">Логин</label>
+                <input type="text" id="logReg" name="login" placeholder="Логин" required>
+            </p>
+            <p>
+                <label for="mailReg">Email</label>
+                <input type="text" id="mailReg" name="email" placeholder="Email" required>
+            </p>
+            <p>
+                <label for="passReg">Пароль</label>
+                <input type="password" id="passReg" name='password' placeholder="Пароль" required>
+            </p>
+
+            <p>
+                <input type="button" class="btn-submit" onclick="main.registration()" name="singin_button" value="Create">
+            </p>
+            <br>
+            <br>
+            Have account?
+            <a href="#" onClick="$('#signupbox').hide(); $('#loginbox').show()">
+                Sign In
+            </a>
+        </form>
+    </section>
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="assets/js/custom.js"></script>
+    <script src="js/login.js"></script>
+
+
+</body>
+</html>
